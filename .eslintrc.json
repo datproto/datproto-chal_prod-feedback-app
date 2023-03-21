@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": [
+    "no-comments",
+    "simple-import-sort",
+    "jest"
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:jest/recommended",
+    "plugin:react-redux/recommended",
+    "plugin:tailwindcss/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts", "*.tsx", "*.js"
+      ],
+      "parser": "@typescript-eslint/parser"
+    }
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    // Tailwindcss
+    "tailwindcss/enforces-negative-arbitrary-values": 1,
+    "tailwindcss/no-custom-classname": "off",
+
+    // No comments
+    "no-comments/disallowComments": [
+      "error",
+      {
+        "allow": ["TODO", "FIXME", "NOTE", "DEBUG"]
+      }
+    ],
+
+    // React
+    "react/react-in-jsx-scope": "off",
+
+    // Semicolon
+    "semi": ["error", "never"],
+    "@typescript-eslint/semi": "off",
+    "no-unexpected-multiline": "error",
+
+    // Next
+    "@next/next/no-html-link-for-pages": "off"
+  }
+}
