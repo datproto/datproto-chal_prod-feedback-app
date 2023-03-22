@@ -27,6 +27,9 @@ module.exports = {
           tangerine: '#F49F85',
           white: {
             ghost: '#F7F8FD'
+          },
+          red: {
+            jasper: '#D73737'
           }
         }
       }

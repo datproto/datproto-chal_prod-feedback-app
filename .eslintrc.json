@@ -37,7 +37,7 @@
     "no-comments/disallowComments": [
       "error",
       {
-        "allow": ["TODO", "FIXME", "NOTE", "DEBUG"]
+        "allow": ["TODO", "FIXME", "NOTE", "DEBUG", "eslint-disable-next-line"]
       }
     ],
 

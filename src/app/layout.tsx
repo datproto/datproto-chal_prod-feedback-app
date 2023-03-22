@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${jost.variable} font-sans`}>
-      <body>{children}</body>
+      <body className="h-full w-full bg-prod-white-ghost">{children}</body>
     </html>
   )
 }
